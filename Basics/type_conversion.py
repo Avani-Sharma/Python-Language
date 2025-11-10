@@ -29,3 +29,21 @@ b = True
 c = False 
 print(int(b))
 print(int(c))
+
+# 7. two string inputs, converts them to integers, and performs addition, subtraction, multiplication, and division
+# Print all results and show the types before and after conversion.
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+print("Before conversion:")
+print("Type of a:", type(a))
+print("Type of b:", type(b))
+a = int(a)
+b = int(b)
+print("After conversion:")
+print("Type of a:", type(a))
+print("Type of b:", type(b))
+add = a + b
+sub = a - b
+mul = a * b
+div = a / b
+print(add, sub, mul, div)

@@ -48,3 +48,19 @@ print(type(h))
 m = 10
 n = 2.5
 print(type(m+n))
+
+# 11. Takes three inputs: the user's name (string), age (string), and height (string). Convert age to an integer
+#and height to a float. Print the type of each variable before and after conversion 
+name = input()
+age = input()
+height = input()
+print(name, age, height)
+print(int(age))
+print(float(height))
+
+# 12. Accept a string representation of a number, like '45.78'. Convert it into both float and integer formats.
+s ='45.78'
+a = float(s)
+b = int(float(s))
+print(s, a, b)
+
