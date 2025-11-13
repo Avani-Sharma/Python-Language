@@ -29,7 +29,6 @@ g= c|(a^a)
 e= ~e
 print(d, e, f, g)
 
-# 4. Assignment operator
-x=int(input("enter x: "))
+
 
 
