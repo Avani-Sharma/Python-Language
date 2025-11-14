@@ -4,3 +4,11 @@ product = 1
 for i in range(1, 6):
     product *= i
 print(product)
+
+# while loop
+product = 1
+i=1
+while i<=5:
+    product*=i
+    i+=1
+print(product)

@@ -7,14 +7,17 @@ print("2. Burger - Rs 150")
 print("3. Sandwich - Rs 100")
 choice = int(input("Enter your choice (1-3): "))
 if choice == 1:
+    no_pizza = int(input("enter no. of pizza"))
     print("You selected Pizza.")
-    print("Total cost: Rs 200")
+    print("Total cost: ", 200*no_pizza)
 elif choice == 2:
+    no_burger = int(input("enter no. of burger"))
     print("You selected Burger.")
-    print("Total cost: Rs 150")
+    print("Total cost: ", 150*no_burger)
 elif choice == 3:
+    no_sandwitch = int(input("enter no. of sandwich"))
     print("You selected Sandwich.")
-    print("Total cost: Rs 100")
+    print("Total cost: ", 100*no_sandwitch)
 else:
     print("Invalid choice! Please select 1, 2, or 3.")
 print("Thank you for your order!")

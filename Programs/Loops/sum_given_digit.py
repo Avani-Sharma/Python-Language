@@ -8,4 +8,25 @@ while num > 0:
     num = num // 10       # Remove the last digit
 print("Sum of digits:", sum)
 
+# for loop
+n = input()
+sum=0
+for digit in n:
+    sum = sum+ int(digit)
+print(sum)
 
+# sum of all multiples of 7 between 1 to 100
+sum =0
+i =1 
+while i<=100:
+    if(i%7==0):
+        sum = sum+i
+    i+=1
+print(sum)
+
+# for loop
+sum=0
+for i in range(1, 100):
+    if(i%7==0):
+        sum = sum+i
+print(sum)

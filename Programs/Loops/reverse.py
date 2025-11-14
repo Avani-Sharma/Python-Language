@@ -7,3 +7,10 @@ while num>0:
     rev = rev * 10 + digit
     num = num//10
 print(rev)
+
+# for loop
+n = input()
+rev = ""
+for i in n:
+    rev = i+rev
+print(rev)
