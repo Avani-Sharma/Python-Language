@@ -1,0 +1,11 @@
+b = "Avani Sharma"
+print(b[:12])
+print(b[0:7])
+print(b[2:9])
+print(b[0:8:1])
+print(b[3:11:3])
+print(b[:])
+print(b[3::2])
+print(b[:8:2])
+print(b[::2])
+print(b[:19])
