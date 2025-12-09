@@ -1,11 +1,19 @@
-n = int(input())
-temp= n
+n = int(input("enter number: "))
+count = 0
 sum = 0
-while n>0:
-    d = n%10
-    sum=sum+(d*d*d)
+temp = 0
+val = n
+
+while n!=0:
     n = n//10
-if temp == sum:
+    count+=1
+
+while temp!=0:
+    d = temp%10
+    sum = sum + (d**count)
+    temp = temp//10
+
+if sum == val:
     print("armstrong")
 else:
-    print("not armstrong")
+    print("not")
