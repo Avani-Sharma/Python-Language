@@ -1,0 +1,7 @@
+# Sort a list in ascending order without using sort().
+li = [5, 2, 4, 10, 3]
+for i in range(len(li)):
+  for j in range(i + 1, len(li)):
+    if li[i] > li[j]:
+      li[i], li[j] = li[j], li[i]
+print(li)

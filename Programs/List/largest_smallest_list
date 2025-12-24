@@ -1,0 +1,11 @@
+# Find the largest and smallest element in a list without using max() and min().
+li = [1,2,3,4,5,6,7,8,9,10]
+largest = li[0]
+smallest = li[0]
+for i in li:
+  if i > largest:
+    largest = i
+  if i < smallest:
+    smallest = i
+print("largest: ", largest)
+print("smallest: ", smallest)

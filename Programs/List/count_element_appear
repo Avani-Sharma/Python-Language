@@ -1,0 +1,8 @@
+# Count how many times a given element appears in a list.
+li = [1,2,2,2,4,5,2,3,9, 10]
+element = 2
+count = 0
+for i in li:
+  if i== element:
+    count+=1
+print(count)

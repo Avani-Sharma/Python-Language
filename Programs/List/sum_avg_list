@@ -1,0 +1,8 @@
+# Find the sum and average of elements in a list.
+li = [1,2,3,4,5,6,7,8,9,10]
+sum = 0
+for i in range(len(li)):
+  sum += li[i]
+print("sum: ", sum)
+avg = sum/len(li)
+print("avg: ", avg)
