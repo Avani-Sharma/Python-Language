@@ -1,0 +1,18 @@
+# using (+) operator:
+a = [3,2,6, 8]
+b =[8,9]
+c = a+b
+print(c)
+
+# using append():
+a  = [2,3,4]
+b = [3,9]
+for x in b:
+    a.append(x)
+print(a)
+
+# using extend():
+a = [1,2,4,3]
+b = [7, 9, 0]
+a.extend(b)
+print(a)

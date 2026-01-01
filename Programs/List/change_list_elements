@@ -1,0 +1,5 @@
+# change the list elements 
+a = [1,2,3,4,6,'avani']
+a[-1] = 'chinki'
+a[3] = 12
+print(a)

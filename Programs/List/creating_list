@@ -1,2 +1,11 @@
-li = [1,2,3,4,5]
-print(li)
+# using square brackets
+a = [1,2,3]
+print(a)
+
+# using list() constructor
+b = list((1,3,4,'apple'))
+print(b)
+
+# creating list with repeated elements
+c = [2] * 5
+print(a)

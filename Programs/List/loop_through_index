@@ -1,0 +1,15 @@
+# you can also loop through the list items by referring to their index no. 
+a = [3,4,5,6]
+for i in range(len(a)):
+    print(a[i])
+
+# using while() loop:
+a = [4,5,6,7,8]
+i = 0
+while i<len(a):
+    print(a[i])
+    i = i+1
+
+# looping using list comprehension: it offers the shortest syntax for looping through list
+a = [4,5,6,7,8]
+[print(x) for x in a]

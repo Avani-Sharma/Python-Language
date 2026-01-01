@@ -1,0 +1,36 @@
+# built-in functions:
+# len(), max(), min(), sum(), sorted(), list()
+# Sample list
+numbers = [10, 5, 30, 20, 15]
+print("Original List:", numbers)
+
+# 1. len() – returns number of elements in the list
+print("Length of list:", len(numbers))
+
+# 2. max() – returns the largest element
+print("Maximum value:", max(numbers))
+
+# 3. min() – returns the smallest element
+print("Minimum value:", min(numbers))
+
+# 4. sum() – returns the sum of all elements
+print("Sum of elements:", sum(numbers))
+
+# 5. sorted() – returns a new sorted list (original list not changed)
+sorted_list = sorted(numbers)
+print("Sorted list:", sorted_list)
+print("Original list after sorted():", numbers)
+
+# 6. list() – converts other data types into a list
+
+# From tuple
+tuple_data = (1, 2, 3)
+print("List from tuple:", list(tuple_data))
+
+# From set
+set_data = {4, 5, 6}
+print("List from set:", list(set_data))
+
+# From string
+string_data = "Python"
+print("List from string:", list(string_data))

@@ -1,0 +1,6 @@
+# product of list
+li = [1, 2, 3, 4, 5]
+product = 1
+for element in li:
+  product = product*element
+print(product)

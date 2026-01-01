@@ -1,0 +1,3 @@
+# type() function
+a = [1,2,4,'avani']
+print(type(a))

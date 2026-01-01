@@ -1,0 +1,4 @@
+# enumerate function: print index, value both 
+li = [4,6,5,7,8,9]
+for index, element in enumerate(li):
+    print(index, element)

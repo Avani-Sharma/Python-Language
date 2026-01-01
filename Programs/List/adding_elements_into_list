@@ -1,0 +1,20 @@
+# adding elements into the list using functions:
+# append(): adds an element at the end of the list
+a = [1,2,3]
+a.append(4)
+print(a)
+
+# extend(): adds multiple elements to the end of the list 
+a = [1,2,3]
+a.extend([4,6,8])
+print(a)
+
+# insert(): adds an element at a specific position
+a = [1,2,3]
+a.insert(5,7)
+print(a)
+
+# clear(): to remove all items
+a = [1,2,3]
+a.clear()
+print(a)

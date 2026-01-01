@@ -1,0 +1,14 @@
+# use copy() method: to copy the list 
+a = [1,2,3,4,5,6]
+b = a.copy()
+print(b)
+
+# use list() method: another way to make a copy
+a = [2,3,4,6,5,7]
+b = list(a)
+print(b)
+
+# use the slice() operator: also mmake a copy use slice(:) operator
+a = [2,3,6,5,4,6]
+b = a[:]
+print(b)
