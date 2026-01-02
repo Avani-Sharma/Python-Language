@@ -1,0 +1,13 @@
+# once tuple create, can't change its values, tuples are immutable 
+# you can convert the tuple into list, change the list, and convert the list back into tuple
+x = (1,2,3)
+y = list(x)
+y[2] = 'kiwi'
+x = tuple(y)
+print(x)
+
+# add tuple to tuple
+a = (1,2,3)
+b = (4, )   #comma is mandatory 
+a+=b
+print(a)

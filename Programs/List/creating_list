@@ -8,4 +8,8 @@ print(b)
 
 # creating list with repeated elements
 c = [2] * 5
-print(a)
+print(c)
+
+# empty list 
+d = []
+print(d)

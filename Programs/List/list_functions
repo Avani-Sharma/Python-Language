@@ -1,6 +1,5 @@
 # built-in functions:
 # len(), max(), min(), sum(), sorted(), list()
-# Sample list
 numbers = [10, 5, 30, 20, 15]
 print("Original List:", numbers)
 

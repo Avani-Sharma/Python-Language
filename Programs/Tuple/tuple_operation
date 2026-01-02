@@ -1,0 +1,17 @@
+# concatenation
+a = (1,2,4,6)
+b = (2,3,4,5)
+print(a+b)
+
+# repetition
+a = (1,2,4)
+print(a*6)
+
+# membership operator
+a = (1,2,4,6,7,8)
+print(2 in a)
+print(5 not in a)
+
+# comparison operator
+print((1,5, 7, 9) == (2,3,4,5))
+print((1,5, 7, 9) == (1, 5, 7, 9))

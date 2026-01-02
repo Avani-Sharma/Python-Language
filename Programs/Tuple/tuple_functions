@@ -1,0 +1,21 @@
+# built-in functions:
+# len(), max(), min(), sum(), sorted(), tuple()
+numbers = (10, 5, 30, 20, 15)
+print("Original tuple:", numbers)
+
+# 1. len() – returns number of elements in the tuple
+print("Length of tuple:", len(numbers))
+
+# 2. max() – returns the largest element
+print("Maximum value:", max(numbers))
+
+# 3. min() – returns the smallest element
+print("Minimum value:", min(numbers))
+
+# 4. sum() – returns the sum of all elements
+print("Sum of elements:", sum(numbers))
+
+# 5. sorted() – returns a new sorted tuple (original tuple not changed)
+sorted_tuple = sorted(numbers)
+print("Sorted tuple:", sorted_tuple)    #returns list 
+print("Original tuple after sorted():", numbers)

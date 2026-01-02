@@ -1,0 +1,12 @@
+# tuple have 2 methods: count(), index()
+# Initial list
+numbers = (10, 20, 20,30, 40)
+print("Original List:", numbers)
+
+# count() – returns how many times a value appears
+count_20 = numbers.count(20)
+print("Count of 20:", count_20)
+
+# index() – returns the index of a value
+index_30 = numbers.index(30)
+print("Index of 30:", index_30)

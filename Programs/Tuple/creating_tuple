@@ -1,0 +1,33 @@
+# creating a tuple:
+# single element tuple, comma is mandatory: create tuple with one item
+t =  (5, )
+print(t)
+print(type(t))
+
+t = ('A')
+print(t)
+print(type(t))
+
+# without parenthesis
+t = 1,2,3
+print(t)
+
+# empty tuple 
+t = ()
+print(t)
+
+# tuple constructor: to make a tuple
+t = tuple((1,2,3,4))
+print(t)
+
+# using string
+t = ('A', 'B')
+print(t)
+
+# using list
+li = [1,2,4,4,5]
+print(tuple(li))
+
+# using built-in function
+t = tuple('AVANi')
+print(t)

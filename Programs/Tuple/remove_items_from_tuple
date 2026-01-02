@@ -1,0 +1,13 @@
+# you can't remove items in a tuple
+# tuples are unchangeable, so you can't remove items from it
+# convert tuple into list, remove it and cannot it back into tuple
+a = (1, 2, 3)
+y = list(a)      # tuple → list
+y.remove(1)      # remove 1 from list
+a = tuple(y)     # list → tuple
+print(a)
+
+# del: del keyword delete the tuple completely 
+a = (1,2,3,4,5)
+del a
+print(a)   #error
