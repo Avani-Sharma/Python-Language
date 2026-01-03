@@ -1,0 +1,11 @@
+# Separate Positive and Negative Numbers
+t = (10, -3, 5, -7, 0, 4)
+pos = []
+neg = []
+for i in t:
+    if i > 0:
+        pos.append(i)
+    elif i < 0:
+        neg.append(i)
+print("Positive:", tuple(pos))
+print("Negative:", tuple(neg))

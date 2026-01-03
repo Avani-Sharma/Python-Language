@@ -1,0 +1,6 @@
+# Sum of Tuple Elements (without using sum())
+t = (10, 20, 30, 40)
+total = 0
+for i in t:
+    total += i
+print("Sum:", total)

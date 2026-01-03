@@ -1,0 +1,11 @@
+# move all zero elements to the end of a list
+list = [1, 0, 2, 0, 3, 4]
+non_zero = []
+zero = []
+for i in list:
+    if i == 0:
+        zero.append(i)
+    else:
+        non_zero.append(i)
+result = non_zero + zero
+print(result)

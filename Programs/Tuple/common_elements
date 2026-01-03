@@ -1,0 +1,8 @@
+# Print common elements between two tuples
+t1 = (1, 2, 3, 4, 5)
+t2 = (3, 4, 5, 6, 7)
+common = []
+for i in t1:
+    if i in t2 and i not in common:
+        common.append(i)
+print("Common elements:", tuple(common))

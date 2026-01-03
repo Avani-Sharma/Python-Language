@@ -1,0 +1,11 @@
+# Convert a nested tuple into a single flat tuple.
+t = (1, (2, 3), (4, 5))
+flat = []
+for i in t:
+    if type(i) == tuple:
+        for j in i:
+            flat.append(j)
+    else:
+        flat.append(i)
+flat_tuple = tuple(flat)
+print(flat_tuple)

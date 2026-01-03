@@ -1,0 +1,17 @@
+# right rotation by 1 position 
+list = [1, 2, 3, 4, 5]
+last = list[-1]
+for i in range(len(list) - 1, 0, -1):
+    list[i] = list[i - 1]
+list[0] = last
+print(list)
+
+# right rotation by k position
+list = [1, 2, 3, 4, 5]
+k = 2
+for _ in range(k):
+    last = list[-1]
+    for i in range(len(list) - 1, 0, -1):
+        list[i] = list[i - 1]
+    list[0] = last
+print(list)

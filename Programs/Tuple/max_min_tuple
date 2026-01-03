@@ -9,3 +9,15 @@ for i in t:
     min = i
 print("maximum: ", max)
 print("minimum: ", min)
+
+# second largest element
+t = (10, 20, 5, 40, 30)
+largest = t[0]
+second = t[0]
+for i in t:
+    if i > largest:
+        second = largest
+        largest = i
+    elif i > second and i != largest:
+        second = i
+print("Second largest:", second)

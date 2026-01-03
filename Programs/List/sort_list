@@ -1,4 +1,4 @@
-# sort list: befault ascending order
+# sort list: default ascending order
 a = [4,8,6, 9, 8]
 a.sort()
 print(a)

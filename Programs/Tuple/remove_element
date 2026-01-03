@@ -1,0 +1,9 @@
+# Remove a given element from a tuple.
+t = (1, 2, 3, 4, 3, 5)
+key = 3
+lst = []
+for i in t:
+    if i != key:
+        lst.append(i)
+new_tuple = tuple(lst)
+print(new_tuple)

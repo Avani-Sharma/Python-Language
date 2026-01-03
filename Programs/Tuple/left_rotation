@@ -1,0 +1,9 @@
+# Left rotate a tuple by one position
+t = (1, 2, 3, 4, 5)
+lst = list(t)
+first = lst[0]
+for i in range(len(lst) - 1):
+    lst[i] = lst[i + 1]
+lst[-1] = first
+rotated_tuple = tuple(lst)
+print(rotated_tuple)

@@ -1,0 +1,29 @@
+# Using Sum: 
+list = [1, 2, 4, 5]
+n = len(list) + 1
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(list)
+missing = expected_sum - actual_sum
+print("Missing number:", missing)
+
+# Using Loop: 
+list = [1, 2, 4, 5]
+for i in range(1, len(list) + 2):
+    if i not in list:
+        print("Missing number:", i)
+        break
+
+# Using Sorting + Comparison
+list = [1, 2, 4, 5]
+list.sort()
+for i in range(len(list)):
+    if list[i] != i + 1:
+        print("Missing number:", i + 1)
+        break
+
+# 0 to n 
+list = [0, 1, 3]
+n = len(list)
+expected = n * (n + 1) // 2
+actual = sum(list)
+print(expected - actual)

@@ -1,0 +1,17 @@
+# left rotation by 1 position 
+a = [1, 2, 3, 4, 5]
+first = a[0]
+for i in range(len(a) - 1):
+    a[i] = a[i + 1]
+a[-1] = first
+print(a)
+
+# left rotation by k position
+list = [1, 2, 3, 4, 5]
+k = 2
+for element in range(k):
+    first = list[0]
+    for i in range(len(list) - 1):
+        list[i] = list[i + 1]
+    list[-1] = first
+print(list)

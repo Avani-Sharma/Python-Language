@@ -1,3 +1,10 @@
 # Create a tuple of numbers and print its length.
 t = (1,2,3,4,5,6,7,8, 34,23)
 print(len(t))
+
+# Find Length of a Tuple (without using len())
+t = (10, 20, 30, 40, 50)
+count = 0
+for elements in t:
+    count += 1
+print("Length:", count)

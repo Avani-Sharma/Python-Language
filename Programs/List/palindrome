@@ -1,0 +1,11 @@
+# palindrome list without using reverse function
+list = [1, 2, 3, 2, 1]
+a = True
+for i in range(len(list)//2):
+    if list[i] != list[len(list)-1-i]:
+        a = False
+        break
+if a:
+    print("Palindrome")
+else:
+    print("Not Palindrome")

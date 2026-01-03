@@ -1,0 +1,11 @@
+# Check whether a tuple is palindrome
+t = (1, 2, 3, 2, 1)
+flag = True
+for i in range(len(t)//2):
+    if t[i] != t[len(t)-1-i]:
+        flag = False
+        break
+if flag:
+    print("Palindrome")
+else:
+    print("Not Palindrome")

@@ -1,0 +1,12 @@
+# Check if an Element Exists in Tuple (without using in)
+t = (10, 20, 30, 40)
+key = 30
+found = False
+for i in t:
+    if i == key:
+        found = True
+        break
+if found:
+    print("Element found")
+else:
+    print("Element not found")
