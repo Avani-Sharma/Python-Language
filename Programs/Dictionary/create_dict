@@ -1,8 +1,0 @@
-# creating a dictionary
-
-student_data = {
-    "name": "avani",
-    "roll_number": 101,
-    "class": "A23"
-}
-print(student_data)
