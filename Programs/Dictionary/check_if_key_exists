@@ -1,0 +1,6 @@
+data = {"id": 101, "name": "Avani"}
+
+if "name" in data:
+    print("Key exists")
+else:
+    print("Key not found")
