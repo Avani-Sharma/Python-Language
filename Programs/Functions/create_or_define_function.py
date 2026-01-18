@@ -1,5 +1,7 @@
 # function: it is a block of code which only runs when it is called. 
 # function helps avoiding code repetition.
+# clean code and readable
+# using functions to manage large programs 
 
 # to create/ defining a function: use the def keyword followed by function name and parentheses
 
