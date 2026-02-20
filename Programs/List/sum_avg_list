@@ -6,3 +6,17 @@ for i in range(len(li)):
 print("sum: ", sum)
 avg = sum/len(li)
 print("avg: ", avg)
+
+# sum of list using range function 
+list = [1,2,3,4,5]
+sum = 0 
+for i in range(len(list)):
+  sum+= list[i]
+print(sum)
+
+# sum of list using membership operator
+li1 = [1,2,3,4,5]
+sum = 0
+for element in li1:
+  sum += element
+print(sum)
