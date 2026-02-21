@@ -1,4 +1,11 @@
-# product of list
+# product of list using range function 
+li = [1, 2, 3, 4, 5]
+product = 1
+for i in range(len(li)):
+  product *= li[i]
+print(product)
+
+# product of list using membership operator
 li = [1, 2, 3, 4, 5]
 product = 1
 for element in li:
