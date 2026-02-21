@@ -9,3 +9,11 @@ for i in li:
     smallest = i
 print("largest: ", largest)
 print("smallest: ", smallest)
+
+# find maximum element in list
+li = [1,3,4,5,6]
+maximum = li[0]
+for i in li:
+  if i>maximum:
+    maximum = i
+print(maximum)
