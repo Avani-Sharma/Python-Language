@@ -4,6 +4,12 @@ a = [1,2,3]
 a.append(4)
 print(a)
 
+# using append list inside list 
+b = [1,2,4]
+c = [3,4,5]
+b.append(c)
+print(b)
+
 # extend(): adds multiple elements to the end of the list 
 a = [1,2,3]
 a.extend([4,6,8])
