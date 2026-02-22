@@ -6,3 +6,11 @@ for i in li:
   if i== element:
     count+=1
 print(count)
+
+# print occurence/frequency of particular element
+li =[1,2,3,4,5,3,2,1]
+count = 0
+for i in range(len(li)):
+  if li[i] == 5:
+    count+=1
+print(count)

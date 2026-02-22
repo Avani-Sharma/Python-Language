@@ -11,3 +11,11 @@ product = 1
 for element in li:
   product = product*element
 print(product)
+
+# print the product of all positive elements
+li = [1,-2,3,-4,5]
+prod = 1
+for i in li:
+  if i>0:
+    prod *= i
+print(prod)

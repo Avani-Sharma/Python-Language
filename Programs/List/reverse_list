@@ -1,6 +1,9 @@
 # Reverse a list using a for loop.
 li = [1, 2, 3, 4, 5, 6, 7]
 rev = []
+# start: len(li) - 1
+# end: -1
+# step: -1
 for i in range(len(li) - 1, -1, -1):
   rev.append(li[i])
 print(rev)
