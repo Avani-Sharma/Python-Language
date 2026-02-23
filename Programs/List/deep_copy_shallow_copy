@@ -17,5 +17,3 @@ deep = copy.deepcopy(li)
 deep[0][0] = 100
 print("Original:", li)
 print("Deep:", deep)
-
-# implement deep copy and shallow copy on the list
