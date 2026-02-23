@@ -29,13 +29,14 @@ print()
 li = ['apple', 'car', 'elephant', 'dog', 'cat']
 li = [word for word in li if len(word) < 4]
 print(li)
+print()
 
 # generate a new list which has numbers greater than 10
 li1 = [1,2,4,6,7,8,9,10,12,14]
 li1 = [X for X in li1 if X>10]
 print(li1)
+print()
 
 # generate a list of odd numbers from 100 to 1
 num = [X for X in range(100, 0, -1) if X%2 !=0]
 print(num)
-print()

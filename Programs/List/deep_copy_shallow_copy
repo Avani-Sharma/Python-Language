@@ -1,0 +1,7 @@
+# shallow copy: the reference of the outer objects are different and inner objects reference are same.
+# that's why when make changes into the original list than also the change would be reflected into the 
+# original list 
+import copy 
+li = [1,2,3,4]
+shallow_list = copy.copy(li)
+print(shallow_list)
