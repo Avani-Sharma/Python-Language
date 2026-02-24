@@ -1,4 +1,26 @@
-# Sandglass pattern
+# sandglass pattern 
+for i in range(4, 0, -1):
+  for j in range(4, 0, -1):
+    if j<=i:
+      print("*", end=" ")
+    else:
+      print(" ", end=" ")
+  for j in range(2, i+1):
+    print("*", end=" ")
+  print()
+for i in range(2, 5):
+  for j in range(4, 0, -1):
+    if j<=i:
+      print("*", end=" ")
+    else:
+      print(" ", end=" ")
+  for j in range(2, i+1):
+    print("*", end=" ")
+  print()
+
+print()
+
+# half left sandglass pattern
 '''
 * * * * *
   * * * *
@@ -10,19 +32,37 @@
   * * * *
 * * * * *
 '''
-rows = 5
-for i in range(rows, 0, -1):  
-    for j in range(rows - i):
-        print("  ", end="")  
-    for k in range(i):
-        print("* ", end="")   
-    print()
-rows = 5
-for i in range(2, rows + 1):  
-    for j in range(1, rows + 1):  
-        if j <= rows - i:
-            print("  ", end="")  
+for i in range(5, 0, -1):
+    for j in range(5, 0, -1):
+        if j<=i:
+            print("*", end=" ")
         else:
-            print("* ", end="")  
+            print(" ", end=" ")
     print()
 
+for i in range(2, 6):
+    for j in range(5, 0, -1):
+        if j<=i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print()
+
+# half right sandglass pattern
+for i in range(4, 0, -1):
+    for j in range(1, 5):
+        if j<=i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+for i in range(2, 5):
+    for j in range(1, 5):
+        if j<=i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
