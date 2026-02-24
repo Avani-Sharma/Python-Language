@@ -76,17 +76,18 @@ for j in range(cols):
 print()
 
 # 10 Print the main diagonal elements..
-li = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+li = [[1, 2, 3],[4, 5, 6], [7, 8, 9]]
 for i in range(len(li)):
-    print("Main diagonal:", li[i][i])
-print()
+  for j in range(len(li[i])):
+    if i == j:
+      print(li[i][j])
 
-# 11 Print the secondary diagonal elements.
-li = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-n = len(li)
-for i in range(n):
-    print("Secondary diagonal:", li[i][n - 1 - i])
-print()
+# print the secondary diagonal
+li = [[1, 2, 3],[4, 5, 6], [7, 8, 9]]
+for i in range(len(li)):
+  for j in range(len(li[i])):
+    if i+j ==2:
+      print(li[i][j])
 
 # 12 Find the sum of diagonal elements.
 li = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
