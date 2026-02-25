@@ -16,6 +16,5 @@ for i in range(1, 5):
             print(ch, end=" ")
         else:
             print(" ", end=" ")
-    
     print()
     ch = chr(ord(ch) + 1) 
