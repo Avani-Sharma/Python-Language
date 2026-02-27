@@ -71,9 +71,60 @@ for ch in s:
         res += ch
 print(res)
 
+# intersection: finds the common elements between two or more set 
 # find common element into the two set
 s = {1,2,3,4,5,6}
 s1 = {1,2,3,4,2,4}
-s2 = s.intersection(s1)
-print("common elements: ", s2)
+s2 = {3,4,2,2,4,3,4}
+s3 = s.intersection(s1)
+s4 = s1 & s2 & s3
+print("common elements intersection: ", s3)
+print("common elements intersection: ", s4)
 
+# union 
+s = {1,2,3,4,5,6}
+s1 = {1,2,3,4,2,4}
+s2 = {3,4,2,2,4,3,4}
+s3 = s.union(s1)
+s4 = s1 | s2 | s3
+print("common elements union: ", s3)
+print("common elements union: ", s4)
+
+# difference
+s = {1,2,3,4,5,6}
+s1 = {1,2,3,4,2,4}
+s2 = s - s1
+print("common elements difference: ", s2)
+
+# symmetric difference: (^: XOR operator): remove common elements
+s = {1,2,3,4,5,6}
+s1 = {4,5,6,7,8}
+s2 = s ^ s1
+print("common elements symmetric difference: ", s2)
+
+# add one element into the set: use .add()
+s = {1,2,3,4}
+s.add(5)
+print("ADD: ", s)
+
+# add multiple elements into the set: use .update()
+s = {1,2,3,4,5,8}
+s.update([1,2,45])
+print("UPDATE: ", s)
+
+# remove method is used to remove the particular element from the set 
+# if that element doesn't present into the set then it would throw an error known as key error
+
+# discard method is used to remove the particualr element from the set if that element 
+# which we trying to remove the set not exist into the set then it would not through any error
+
+# pop method is used to remove any element or the random element from the set 
+
+# remove one element from the set: pop(), remove(), discard()
+s = {1,2,3,4,5}
+s.remove(3)
+s.discard(40)
+s.pop()
+print("REMOVE: " , s)
+print("DISCARD: ", s)
+print("POP: ", s)
