@@ -1,3 +1,7 @@
+# list to set
+li = [1,2,3,2,4,5]
+print(set(li))
+
 # write a program to create a set using list of the elements
 li = [1, 2, 3, 5, 5]
 s = set(li)

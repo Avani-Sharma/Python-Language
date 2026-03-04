@@ -2,7 +2,7 @@
 # it stores the heterogenous elements
 # unordered collection 
 # set is mutable: after creation we can make changes in it 
-# indexing is not possible over the set 
+# indexing or slicing is not possible over the set because it is unordered 
 # don't allow duplicate values 
 
 # initialize the set: use {} braces
