@@ -52,16 +52,32 @@ print(d)
 
 # 5. Check if All Values are Unique: Write a code that checks if all values in a dictionary are
 # unique. Example: {'a':1,'b':2,'c':3} → True, {'a':1,'b':2,'c':1} → False.
-d = {'a':1,'b':2,'c':3}
-d1 = []
-unique = True
-for v in d.values():
-    if v in d1:
-        unique = False
-        break
-    d1.append(v)
-print(unique)
+d = {'a':1, 'b':2, 'c':3}
+if len(set(d.values())) == len(list(d.values())):
+    print("all values are unique")
+else:
+    print("not unique")
 
 # 6. Valid Parenthesis: Given a string containing brackets (), {}, [], determine if the string is valid.
 # A string is valid if every opening bracket has a corresponding closing bracket of the same type
 # and in the correct order.
+Parenthesis = '([{}])'
+stack = []
+mapping = {
+    ')' : '(',
+    ']' : '[',
+    '}' : '{'
+}
+is_valid = True
+for char in Parenthesis:
+    if char in mapping:
+        if stack and stack[-1] == mapping[char]:
+            stack.pop()
+        else:
+            is_valid = False
+    else:
+        stack.append(char)
+if len(stack) == 0 and is_valid:
+    print("valid parenthesis")
+else:
+    print("not valid parenthesis")
