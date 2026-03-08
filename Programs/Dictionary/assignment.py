@@ -73,8 +73,6 @@ for char in Parenthesis:
     if char in mapping:
         if stack and stack[-1] == mapping[char]:
             stack.pop()
-        else:
-            is_valid = False
     else:
         stack.append(char)
 if len(stack) == 0 and is_valid:
