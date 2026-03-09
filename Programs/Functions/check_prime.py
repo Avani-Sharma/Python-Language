@@ -25,3 +25,17 @@ def is_prime(n):
 for i in range(2, 101):
     if is_prime(i):
         print(i, end=" ")
+
+# another method
+def is_prime(n):
+    fact = 0
+    for i in range(1, n+1):
+        if n%i == 0:
+            fact+=1
+    if fact == 2:
+        return True
+    else:
+        return False
+for i in range(2, 101):
+    if is_prime(i):
+        print(i, end=" ")
