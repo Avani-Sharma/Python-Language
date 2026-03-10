@@ -168,5 +168,5 @@ print("first digit: ", result)
 # 20 Write a function that takes two numbers and returns the absolute difference between them.
 def absolute_difference(a, b):
     return abs(a - b)
-result = absolute_difference(10, 4)
+result = absolute_difference(4,8)
 print("absolute difference: ", result)

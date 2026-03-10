@@ -8,5 +8,3 @@ def add(*args):
         sum += element
     return sum
 print(add(2,3,4,6,4,7,8))
-
-# 
