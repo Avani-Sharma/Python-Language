@@ -2,6 +2,8 @@
 # either it could two or more
 # it return all the arguments in the form of tuple 
 
+# syntax: def fun_name(*args)
+
 def add(*args):
     sum = 1
     for element in args:
