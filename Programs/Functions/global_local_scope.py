@@ -1,6 +1,6 @@
 # global variable: which is accessible inside or outside of the function
 # you can use this variable anywhere into the program
-# if you want to value of the global var then use the 'global' keyword to access that variable
+# if you want to value of the global variable then use the 'global' keyword to access that variable
 var = 1
 def count():
   # local variable is accessible only inside the function we can't use this outside the function
