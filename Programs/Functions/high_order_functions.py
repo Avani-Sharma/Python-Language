@@ -28,3 +28,35 @@ def outer():
         print("inner function is running")
     inner()
 outer()
+
+# create a high order function that filter outs the even numbers from the list 
+def high_fun(fun, list):
+    result = []
+    for num in li:
+        if fun(num):
+            result.append(num)
+    return result
+def is_even(n):
+    if n%2==0:
+        return True
+    return False
+print(is_even(10))
+li = [1,2,3,4,5]
+ans = high_fun(is_even, li)
+print(ans)
+
+# filter out negative numbers from the list 
+def high_fun(fun, list):
+    result = []
+    for num in li:
+        if fun(num):
+            result.append(num)
+    return result
+def is_negative(n):
+    if n<0:
+        return True
+    return False
+print(is_negative(-4))
+li = [1,-2,-3,4,5]
+ans = high_fun(is_negative, li)
+print(ans)
