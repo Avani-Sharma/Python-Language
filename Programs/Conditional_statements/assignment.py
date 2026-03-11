@@ -72,7 +72,7 @@ else:
 
 # 7. Write a program using nested if to check whether a person is eligible for a
 # job based on age, and if eligible, check whether they have the required qualification.
-
+aged = input()
 # 8. Write a program using nested if to check whether a number is greater than
 # 50, and if yes, check whether it is also greater than 100.
 # 9. Write a program using if-elif-else to check whether a number is positive,
