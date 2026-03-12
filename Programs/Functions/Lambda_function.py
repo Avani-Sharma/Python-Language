@@ -6,7 +6,9 @@
 
 # here we have stored the lambda function into the sum_1 variable
 sum_1 = lambda a, b:a+b
-
 # call sum_1 variable 
 print(sum_1(3, 5))
 
+# another example
+var = lambda x: x**2
+print(var(3))
