@@ -35,6 +35,7 @@ result = list(map(fun, l1, l2) )
 print(result)
 
 
+
 # filter questions: 
 # 1 Given a list of integers, use filter to create a new list containing only even numbers.
 li = [1,2,3,4,5,6]
@@ -69,3 +70,52 @@ def div(d):
 result = list(filter(div, li))
 print(result)
 
+
+
+# higher order function questions:
+# 1 Write a function calculate that takes another function and a number as arguments and applies
+# that function to the number.
+# 2 Create a function operation that accepts two numbers and a function (like add, multiply) and
+# returns the result after applying the function.
+# 3 Write a function power_generator that returns another function which calculates the cube of a
+# number.
+# 4 Create a function apply_twice that takes a function and a number, and applies the function two
+# times on the number.
+# 5 Write a function choose_function that takes a string argument ('double' or 'triple') and returns a
+# corresponding function to multiply a number.
+
+
+
+# decorator questions:
+# 1 Write a decorator that prints 'Function started' before execution and 'Function ended' after
+# execution of any function.
+def deco(func):
+    def wrapper():
+        print("Function started")
+        func()
+        print("Function ended")
+    return wrapper
+@deco
+def my_fun():
+    print("fun")
+my_fun()
+
+# 2 Create a decorator that measures and prints the execution time of a function.
+# 3 Write a decorator that checks whether the input number to a function is positive; if not, it should
+# print an error message.
+def pos(fun):
+    def wrapper(m):
+        if m>0:
+            return fun(m)
+        else:
+            print("error ")
+    return wrapper
+@pos
+def num(m):
+    print(m)
+m = int(input())
+num(m)
+
+# 4 Create a decorator that logs the arguments passed to a function before calling it.
+# 5 Write a decorator that allows a function to be executed only once; on subsequent calls it should
+# print 'Function already executed'.
