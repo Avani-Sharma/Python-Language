@@ -37,7 +37,35 @@ print(result)
 
 # filter questions: 
 # 1 Given a list of integers, use filter to create a new list containing only even numbers.
+li = [1,2,3,4,5,6]
+def even(r):
+    return r%2==0
+result = list(filter(even, li))
+print(result)
+
 # 2 Write a program that takes a list of numbers and filters out all numbers greater than 50.
+li = [20, 30, 40 , 60, 80, 90]
+def greater(g):
+    return g>50
+result = list(filter(greater, li))
+print(result)
+
 # 3 Given a list of strings, use filter to return only those strings whose length is greater than 5.
+li = ['Avani', 'chinki']
+def leng(l):
+    return len(l)>5
+result = list(filter(leng, li))
+print(result)
+
 # 4 Write a program to filter out all negative numbers from a given list using filter and lambda.
+li = [1,2,-1,-2,-3, -5]
+result = list(filter(lambda ng: ng<0, li ))
+print(result)
+
 # 5 Given a list of integers, use filter to extract only numbers that are divisible by both 2 and 3.
+li = [4, 6,12, 18, 9, 15]
+def div(d):
+    return d%2==0 and d%3==0
+result = list(filter(div, li))
+print(result)
+
