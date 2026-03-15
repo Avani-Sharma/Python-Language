@@ -24,3 +24,5 @@ for i in range(3, 0, -1):
     else:
         print(" ", end=" ")
   print()
+
+print()
