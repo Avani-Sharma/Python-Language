@@ -101,6 +101,7 @@ def my_fun():
 my_fun()
 
 # 2 Create a decorator that measures and prints the execution time of a function.
+
 # 3 Write a decorator that checks whether the input number to a function is positive; if not, it should
 # print an error message.
 def pos(fun):
@@ -117,5 +118,31 @@ m = int(input())
 num(m)
 
 # 4 Create a decorator that logs the arguments passed to a function before calling it.
+def log_args(func):
+    def wrapper(*args, **kwargs):
+        print("Arguments:", args, kwargs)
+        return func(*args, **kwargs)
+    return wrapper
+@log_args
+def add(a, b):
+    print("Sum:", a + b)
+add(5, 3)
+ 
 # 5 Write a decorator that allows a function to be executed only once; on subsequent calls it should
 # print 'Function already executed'.
+def run_once(func):
+    executed = False
+    def wrapper():
+        nonlocal executed
+        if not executed:
+            func()
+            executed = True
+        else:
+            print("Function already executed")
+    return wrapper
+@run_once
+def greet():
+    print("Hello")
+greet()
+greet()
+greet()

@@ -13,7 +13,7 @@
 # list is initialized with the [] and tuple is initialized with the ()
 
 # since the tuple is immutable in nature, although you want to change the tuple then you have to type cast 
-# that tuple tuple into the list then after you can change into the tuple
+# that tuple into the list then after you can change into the tuple
 t = (4,5,6)
 print(type(t))
 print(t[0])
