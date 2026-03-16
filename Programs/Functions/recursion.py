@@ -15,7 +15,7 @@ def greet(n):
 greet(1)
 
 
-# example
+# print 1 to 5 using recursion
 def fun(n):
   if n==6:
     return 
