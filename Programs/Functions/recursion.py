@@ -4,23 +4,12 @@
 #   recursion calls
 # func()
 
-def greet(n):
-  # base case
-  if n == 0:
-    return
-  print('hello')
-  # recursion call
-  greet(n-1)
-greet(5)
-
-print()
-
-# increment method
+# example 
 def greet(n):
   # base condition: if condition is true then the function call would be stopped.
   if n == 5:
     return
-  print('hello')
+  print('hello, from the function')
   # recursion call: this function call is nothing but the recursion call for the next numbers.
   greet(n+1)
 greet(1)
