@@ -6,9 +6,9 @@ def add(n):
 print(add(5))
     
 # another way 
-def add(n):
-    if n==6:
+def add(m):
+    if m==6:
         return 0
-    result = n+add(n+1)
+    result = m+add(m+1)
     return result
 print(add(1))
