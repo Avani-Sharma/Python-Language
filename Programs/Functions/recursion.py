@@ -13,3 +13,12 @@ def greet(n):
   # recursion call: this function call is nothing but the recursion call for the next numbers.
   greet(n+1)
 greet(1)
+
+
+# example
+def fun(n):
+  if n==6:
+    return 
+  print("number is: ", n)
+  fun(n+1)
+fun(1)
