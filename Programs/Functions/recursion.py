@@ -17,10 +17,10 @@ print()
 
 # increment method
 def greet(n):
-  # base case
-  if n == 6:
+  # base condition: if condition is true then the function call would be stopped.
+  if n == 5:
     return
   print('hello')
-  # recursion call
+  # recursion call: this function call is nothing but the recursion call for the next numbers.
   greet(n+1)
 greet(1)
