@@ -1,4 +1,5 @@
 # map questions:
+print("============== Map Questions ==============")
 # 1 Write a program that takes a list of integers and uses map to return a new list containing the
 # square of each number.
 li = [1,2,3,4]
@@ -37,6 +38,7 @@ print(result)
 
 
 # filter questions: 
+print("================ Filter question =================")
 # 1 Given a list of integers, use filter to create a new list containing only even numbers.
 li = [1,2,3,4,5,6]
 def even(r):
@@ -73,21 +75,63 @@ print(result)
 
 
 # higher order function questions:
+print("================== Higher order function ================")
 # 1 Write a function calculate that takes another function and a number as arguments and applies
 # that function to the number.
-def 
+def calculate(func, num):
+    return func(num)
+def square(x):
+    return x * x
+print(calculate(square, 5))
+
 # 2 Create a function operation that accepts two numbers and a function (like add, multiply) and
 # returns the result after applying the function.
+def operation(a, b, func):
+    return func(a, b)
+
+# Example functions
+def add(x, y):
+    return x + y
+def multiply(x, y):
+    return x * y
+print(operation(3, 4, add))      
+print(operation(3, 4, multiply))
+
 # 3 Write a function power_generator that returns another function which calculates the cube of a
 # number.
+def power_generator():
+    def cube(x):
+        return x ** 3
+    return cube
+cube_func = power_generator()
+print(cube_func(3))
+
 # 4 Create a function apply_twice that takes a function and a number, and applies the function two
 # times on the number.
+def apply_twice(func, num):
+    return func(func(num))
+def add_two(x):
+    return x + 2
+print(apply_twice(add_two, 3))
+
 # 5 Write a function choose_function that takes a string argument ('double' or 'triple') and returns a
 # corresponding function to multiply a number.
+def choose_function(choice):
+    if choice == "double":
+        return lambda x: x * 2
+    elif choice == "triple":
+        return lambda x: x * 3
+    else:
+        return lambda x: x
+func = choose_function("double")
+print(func(5))   
+func = choose_function("triple")
+print(func(5))
 
 
 
 # decorator questions:
+print("================== Decorators =================")
 # 1 Write a decorator that prints 'Function started' before execution and 'Function ended' after
 # execution of any function.
 def deco(func):
