@@ -163,7 +163,7 @@ elif year%100 ==0:
 elif year%400 == 0:
     print("leap year")
 else:
-    print("not a leap year")
+    print("not a leap year ")
 
 # 14. Write a program using elif to classify a person’s age group: Child, Teen, Adult, or
 # Senior.
