@@ -75,6 +75,7 @@ print(result)
 # higher order function questions:
 # 1 Write a function calculate that takes another function and a number as arguments and applies
 # that function to the number.
+def 
 # 2 Create a function operation that accepts two numbers and a function (like add, multiply) and
 # returns the result after applying the function.
 # 3 Write a function power_generator that returns another function which calculates the cube of a
@@ -101,6 +102,19 @@ def my_fun():
 my_fun()
 
 # 2 Create a decorator that measures and prints the execution time of a function.
+import time
+def exe(func):
+    def wrapper(z):
+        start = time.time()
+        func(z)
+        end = time.time()
+        print("execution time: ", end - start)
+    return wrapper 
+@exe
+def exec(z):
+    print(z)
+z = int(input())
+exec(z)
 
 # 3 Write a decorator that checks whether the input number to a function is positive; if not, it should
 # print an error message.
