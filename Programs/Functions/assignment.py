@@ -164,6 +164,7 @@ def first_digit(n):
     return n
 result = first_digit(5678)
 print("first digit: ", result)
+print()
 
 # 20 Write a function that takes two numbers and returns the absolute difference between them.
 def absolute_difference(a, b):
