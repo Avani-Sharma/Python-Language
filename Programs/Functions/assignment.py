@@ -156,6 +156,7 @@ def last_digit(n):
     return n % 10
 result = last_digit(1234)
 print("last digit: ", result)
+print()
 
 # 19 Write a function that takes a number and returns the first digit of the number.
 def first_digit(n):
