@@ -7,3 +7,8 @@ def square(n):
     return n * n
 result = square(5)
 print(result)
+
+# add using return function
+def add(c,d):
+    return c+d
+print(add(4,3))
