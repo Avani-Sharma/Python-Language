@@ -76,20 +76,53 @@ for i in range(1, 5):
 print()
 
 '''
-   *
-  * *
- * * *
-* * * *
+1
+2 3
+4 5 6
+7 8 9 10
+'''
+num = 1
+for i in range(1, 5):
+    for j in range(1, 5):
+        if j<=i:
+            print(num, end=" ")
+            num+=1
+        else:
+            print(" ", end=" ")
+    print()
+
+print()
+
+'''
+A
+A B
+A B C
+A B C D
 '''
 for i in range(1, 5):
-    for j in range(4, 0,-1):
+    ch = 'A'
+    for j in range(1, 5):
         if j<=i:
-            print("*", end=" ")
+            print(ch, end=" ")
+            ch = chr(ord(ch)+1)
         else:
             print(" ", end=" ")
-    for j in range(2, 5):
+    print()
+
+print()
+
+'''
+A
+B B
+C C C
+D D D D
+'''
+ch = 'A'
+for i in range(1, 5):
+    for j in range(1, 5):
         if j<=i:
-            print("*", end=" ")
+            print(ch, end=" ")
         else:
             print(" ", end=" ")
+    ch = chr(ord(ch)+1)
     print()
