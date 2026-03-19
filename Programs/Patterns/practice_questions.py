@@ -126,3 +126,36 @@ for i in range(1, 5):
             print(" ", end=" ")
     ch = chr(ord(ch)+1)
     print()
+
+'''
+*       *
+  *   *
+    *
+  *   *
+*       *
+'''
+for i in range(1, 4):
+    for j in range(1, 4):
+        if j==i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    for j in range(2, 0, -1):
+        if j==i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+for i in range(2, 0, -1):
+    for j in range(1, 4):
+        if j==i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    for j in range(2, 0, -1):
+        if j==i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
