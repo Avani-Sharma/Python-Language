@@ -11,6 +11,8 @@
 # except exception_error:
 #     print the message why this exception has occured 
 
+# try-except is used to catch and handle runtime errors in a program
+
 try:
     print(10/0)
 except ZeroDivisionError as e:
