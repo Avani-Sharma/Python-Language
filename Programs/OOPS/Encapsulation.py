@@ -66,10 +66,31 @@ acc1.display_balance()
 acc1.deposit(5000)
 acc1.display_balance()
 
-# create a class librarybook that demonstrate the encapsulation. 
+
+# ques:-  create a class librarybook that demonstrate the encapsulation. 
 # Create a private variable no_available_book 
 # make a method to issue a book (decrease the no. of books if books are available otherwise print
 # the 'not available book')
 # make a method to check how many books are available.
 class LibraryBook:
+    def __init__(self, total_books):
+        # private variable
+        self.__no_available_book = total_books
+    # method to issue book
+    def issue_book(self):
+        if self.__no_available_book > 0:
+            self.__no_available_book -= 1
+            print("Book issued successfully")
+        else:
+            print("Not available book")
+    # method to check available books
+    def check_books(self):
+        return self.__no_available_book
+# object create
+obj = LibraryBook(3)
+obj.issue_book()
+obj.issue_book()
+obj.issue_book()
+obj.issue_book()   
+print("Available books:", obj.check_books())
     
