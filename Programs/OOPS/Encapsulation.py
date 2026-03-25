@@ -23,6 +23,8 @@ print(obj.id)
 
 
 # protected attribute: initialized with one underscore '_'.
+
+# ATM management system 
 class ATM:
     def __init__(self, pin, name, balance):
         # private attributes
@@ -46,3 +48,28 @@ class ATM:
 obj = ATM(1234, 'avani', 50000)
 obj.display_balance()
 obj.change_pin(9876)
+
+# account management system 
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.__balance = balance
+    def display_balance(self):
+        balance = self.__balance
+        print(balance)
+    def deposit(self, amount):
+        self.__balance += amount
+        print("money deposited successfully")
+# opening account
+acc1 = BankAccount('avani', 5000)
+acc1.display_balance()
+acc1.deposit(5000)
+acc1.display_balance()
+
+# create a class librarybook that demonstrate the encapsulation. 
+# Create a private variable no_available_book 
+# make a method to issue a book (decrease the no. of books if books are available otherwise print
+# the 'not available book')
+# make a method to check how many books are available.
+class LibraryBook:
+    
