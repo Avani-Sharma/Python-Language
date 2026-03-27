@@ -30,3 +30,14 @@ for i in range(1, 100):
     if(i%7==0):
         sum = sum+i
 print(sum)
+
+
+# sum of digit of given number
+sum = 0
+n = int(input())
+n = abs(n)
+while n>0:
+    digit = n%10
+    sum +=digit
+    n = n//10
+print(sum)
