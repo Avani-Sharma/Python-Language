@@ -93,4 +93,3 @@ obj.issue_book()
 obj.issue_book()
 obj.issue_book()   
 print("Available books:", obj.check_books())
-    

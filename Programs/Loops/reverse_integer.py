@@ -1,18 +1,10 @@
-x = -123
-sign = 1
-if x<0:
-    sign = -1
-    x = -x
-
+# reverse the digit of number
 rev = 0
-while x>0:
-    digit = x%10
+n = int(input())
+sign = -1 if n<0 else 1
+n = abs(n)
+while n>0:
+    digit = n%10
     rev = rev*10+digit
-    x = x//10
-
-rev = sign*rev
-
-if rev< -2**31 or rev>2**31 -1:
-    print(0)
-else:
-    print(rev)
+    n = n//10
+print(sign*rev)
