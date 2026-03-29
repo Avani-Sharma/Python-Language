@@ -59,7 +59,7 @@ while True:
 
     # Exit
     elif choice == 4:
-        print("Thank you 😊")
+        print("Thank you")
         break
 
     else:
