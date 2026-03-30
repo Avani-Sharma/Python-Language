@@ -89,7 +89,12 @@ print()
 # multiple inheritance: in this inheritance basically there is more than one parent of the derived class 
 # or the child class 
 # example: class A, class B, class(A, B)
-# __mro__ : means methdod resolution order 
+# __mro__ : means method resolution order : define or decides how the method od different class would run.
+# A - Display method
+# B - Display method
+# C(A, B)
+# C - obj-> obj.display -> here class A display method is called.
+# class -> C , class A, class B
 class CngCar:
     cng_prop = 'this car will run with cng'
     def display(self):
@@ -102,3 +107,4 @@ class HybridCar(PetrolCar, CngCar):
     pass
 car = HybridCar()
 car.display()
+
