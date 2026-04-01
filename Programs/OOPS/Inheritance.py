@@ -48,6 +48,7 @@ print(obj.company)   # because it is class attribute it is common for all
 
 print()
 
+
 # multilevel inheritance: Multilevel inheritance is a type of inheritance in which a class is derived 
 # from a parent class, and that parent class is itself derived from another class. 
 # or basically there more than one level of inheritance is given.
@@ -86,6 +87,7 @@ manager.details()
 
 print()
 
+
 # multiple inheritance: in this inheritance basically there is more than one parent of the derived class 
 # or the child class 
 # example: class A, class B, class(A, B)
@@ -108,3 +110,7 @@ class HybridCar(PetrolCar, CngCar):
 car = HybridCar()
 car.display()
 
+# class method: is used to change or to update the class attribute using the class method decorator
+# into the method the first parameter is cls.   
+
+# Static method is used to perform any operation or task without creating any object of class 
