@@ -16,3 +16,18 @@ class Dog(Animal):
         print("barks")
 obj = Dog()
 obj.make_sound()
+
+# Operator overloading: using the same operator for different data type. Python allows operators 
+# like +, *, etc., to be overloaded using special methods (__add__, __mul__, etc.). It enables operators
+#  to work with user-defined objects.
+class Number:
+    def __init__(self, value):
+        self.value = value
+    def __add__(self, other):
+        return Number(self.value + other.value)
+    def __str__(self):
+        return str(self.value)
+num1 = Number(10)
+num2 = Number(20)
+result = num1 + num2 
+print(result)  
