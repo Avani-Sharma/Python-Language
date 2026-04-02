@@ -19,12 +19,63 @@ print()
 
 # 2. Write a program where class Teacher has a method teach() and class Researcher has a method
 # research(). Create a class Professor that inherits from both and uses both methods.
+class Teacher:
+    def teach(self):
+        print("Teacher is teaching")
+
+class Researcher:
+    def research(self):
+        print("Researcher is doing research")
+
+class Professor(Teacher, Researcher):
+    def work(self):
+        print("Professor is doing both teaching and research")
+p = Professor()
+p.teach()
+p.research()
+p.work()
+
+print()
+
 # 3. Create two classes Engine and ElectricSystem with respective methods. Create a class
 # HybridCar that inherits from both and demonstrates both functionalities.
+class Engine:
+    def engine_method(self):
+        print("Engine method")
+class ElectricSystem:
+    def electric_method(self):
+        print("electric system method")
+class HybridCar(Engine, ElectricSystem):
+    def hybrid_method(self):
+        print("hybrid car method")
+h = HybridCar()
+h.engine_method()
+h.electric_method()
+h.hybrid_method()
+
+print()
+
 # 4. Implement two classes Writer and Speaker with methods write() and speak(). Create a class
 # Author that inherits from both and calls both methods.
+class Writer:
+    def write(self):
+        print("Writes writes a story")
+class Speaker:
+    def speak(self):
+        print("Speaker speaks a lecture")
+class Author(Writer, Speaker):
+    def work(self):
+        print("author do both work")
+a = Author()
+a.write()
+a.speak()
+a.work()
+
+print()
+
 # 5. Create two parent classes Calculator1 (addition) and Calculator2 (multiplication). Create a child
 # class that uses both operations.
+
 # 6. Demonstrate method overriding in multiple inheritance where both parent classes have a method
 # with the same name.
 # 7. Create a class A and B with constructors. Create class C inheriting from both and show how
