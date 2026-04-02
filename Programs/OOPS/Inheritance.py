@@ -112,5 +112,17 @@ car.display()
 
 # class method: is used to change or to update the class attribute using the class method decorator
 # into the method the first parameter is cls.   
+class Student:
+    school = "ABC School"
+    @classmethod
+    def change_school(cls, name):
+        cls.school = name
+Student.change_school("XYZ School")
+print(Student.school)
 
-# Static method is used to perform any operation or task without creating any object of class 
+# Static method It is just a normal function inside a class 
+class Math:
+    @staticmethod
+    def add(a, b):
+        return a + b
+print(Math.add(2, 3))

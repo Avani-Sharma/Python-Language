@@ -1,5 +1,21 @@
 # 1. Create two classes Father and Mother with methods skills_father() and skills_mother(). Create a
 # child class Child that inherits from both and prints both skills.
+# Parent Class 1
+class Father:
+    def skills_father(self):
+        print("Father: Driving, Business")
+class Mother:
+    def skills_mother(self):
+        print("Mother: Cooking, Painting")
+class Child(Father, Mother):
+    def skills_child(self):
+        print("Child: Learning from both parents")
+c = Child()
+c.skills_father()
+c.skills_mother()
+c.skills_child()
+
+print()
 
 # 2. Write a program where class Teacher has a method teach() and class Researcher has a method
 # research(). Create a class Professor that inherits from both and uses both methods.
