@@ -172,6 +172,3 @@ class SavingsAccount(Account):
 class FixedDepositAccount(SavingsAccount):
     def __init__(self):
         print("fixed deposit account constuctor ")
-# 9. Create a class Device → Computer → Laptop and show functionality extension.
-# 10. Write a program where each class in multilevel inheritance modifies a variable and shows how
-# values change.
