@@ -33,3 +33,29 @@ obj = EvCar()
 obj1 = PetrolCar()
 obj.start()
 obj1.start()
+
+print()
+
+# another example
+from abc import ABC, abstractmethod
+class BankAccount(ABC):
+    @abstractmethod
+    def deposit(self):
+        pass
+    @abstractmethod
+    def withdraw(self):
+        pass
+class CurrentAccount(BankAccount):
+    def deposit(self):
+        print("money has been deposited into the current account")
+    def withdraw(self):
+        print("money has been withdrawn")
+class SavingAccount(BankAccount):
+    def deposit(self):
+        print("money deposited into the saving account")
+    def withdraw(self):
+        print("money has been withdrawn from the saving account")
+saving = SavingAccount()
+current = CurrentAccount()
+saving.withdraw()
+current.withdraw()
