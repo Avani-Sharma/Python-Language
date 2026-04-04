@@ -3,10 +3,10 @@
 
 # or 
 
-# encapsulation is the way to wrap the data (variable) into the single unit (single class) so, it's 
+# encapsulation is the way to wrap the data (variable) and methods into the single unit (single class) so, it's 
 # access could be restricted.
 
-# private attributes: are the attributes which is not accessible outsideof the class.
+# private attributes: are the attributes which is not accessible outside of the class.
 # private attributes are initialized with double underscores '__'.
 # ex: bank balance, password, etc.
 
