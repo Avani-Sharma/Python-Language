@@ -87,3 +87,43 @@ for device in devices:
 
 print()
 
+# 5. Create a base class Transport with a method fare(distance). Then create subclasses Bus, Train,
+# and Taxi. Override fare() with different fare calculation logic. Show polymorphism using different
+# objects.
+class Transport:
+    def fare(self, distance):
+        print("Base fare method")
+class Bus(Transport):
+    def fare(self, distance):
+        return distance * 5  
+class Train(Transport):
+    def fare(self, distance):
+        return distance * 3 
+class Taxi(Transport):
+    def fare(self, distance):
+        return distance * 10 
+ports = [Bus(), Train(), Taxi()]
+distance = 10
+for port in ports:
+    print(port.__class__.__name__, "Fare:", port.fare(distance))
+
+print()
+
+# 6. Create a base class FileHandler with a method open(). Then create subclasses TextFile, ImageFile,
+# and PDFFile. Override open() to simulate opening different file types. Demonstrate runtime
+# polymorphism.
+class FileHandler:
+    def operate(self):
+        print("Operating a generic smart device")
+class SmartLight(SmartDevice):
+    def operate(self):
+        print("Smart Light is turned ON")
+class SmartTV(SmartDevice):
+    def operate(self):
+        print("Smart TV is playing a movie")
+class SmartSpeaker(SmartDevice):
+    def operate(self):
+        print("Smart Speaker is playing music")
+devices = [SmartLight(), SmartTV(), SmartSpeaker()]
+for device in devices:
+    device.operate()  
