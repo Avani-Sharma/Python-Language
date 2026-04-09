@@ -33,7 +33,13 @@ class Service:
     def update_details(self, id, student):
         conn = create_connection()
         cursor = conn.cursor()
-        cursor.execute()
+        cursor.execute(
+            '''UPDATE student
+               SET name = ?, age = ?, course = ?, email = ?
+               WHERE id = ?''',
+            (student.name, student.age, student.course, student.email, id))
+        conn.commit()
+        conn.close()
 
     # view student details
     def view_student(self):
@@ -50,7 +56,6 @@ class Service:
         cursor.execute('DELETE FROM student WHERE id = ?', (id,))
         conn.commit()
         conn.close()
-        print(f"Student with id {id} deleted successfully")
 
 if __name__ == '__main__':
     obj = Service()
