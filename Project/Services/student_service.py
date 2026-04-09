@@ -65,7 +65,7 @@ if __name__ == '__main__':
     # add student 
     s = Student(1, "avani", 22, "DE", "avani@gmail.com")
     obj.add_student(s)
-    print("student detail addess successfully")
+    print("student detail added successfully")
 
     # view all student
     data = obj.view_student()
