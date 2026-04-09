@@ -27,6 +27,8 @@ Perfect for beginners who want to revise or learn Python step-by-step. 🚀
 | 🚨 **Exception Handling** | `try-except` programs |
 | 🧠 **OOPS** | Object-Oriented Programming (class, object, inheritance, etc.) |
 | 🟩 **Patterns** | Star and number pattern programs |
+| 🧾 **Package** | Package and modules|
+| 📋 **Project** | Student Management System|
 
 ---
 
@@ -41,7 +43,9 @@ Perfect for beginners who want to revise or learn Python step-by-step. 🚀
 - String Handling  
 - Exception Handling  
 - Object-Oriented Programming (OOPs)  
-- Pattern Printing  
+- Pattern Printing
+- Packages and Modules
+- Project on Student Management System  
 
 ---
 
