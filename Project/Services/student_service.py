@@ -1,53 +1,76 @@
+import os 
+import sys 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from Database.connection import create_connection
+from Models.student import Student
 class Service:
-    # get admission of student
+    def create_table(self):
+        conn = create_connection()
+        # cursor :  pointer which is used to move into the database
+        # which is used to execute the sql queries
+        cursor = conn.cursor()
+        # here we're executing the sql command using the python
+        cursor.execute("""create table if not exists student(
+                    id integer primary key autoincrement,
+                    name text, 
+                    age integer,
+                    course text,
+                    email text)
+                """)
+        conn.commit()
+        conn.close()
 
-    # update student information
+    # insert one student into the table
+    def add_student(self, student):
+        conn = create_connection()
+        cursor = conn.cursor()
+        cursor.execute('insert into student (name, age, course, email) values (?, ?, ?, ?)',
+                     (student.name, student.age, student.course, student.email))
+        conn.commit()
+        conn.close()
 
-    # inquiry about student
+    # update student details
+    def update_details(self, id, student):
+        conn = create_connection()
+        cursor = conn.cursor()
+        cursor.execute()
 
-    # 1. get admission of student
-    def add_student(self, student_id, name, age, course, email):
-        if student_id in self.db.students:
-            print("Student already exists!")
-        else:
-            student = Student(student_id, name, age, course, email)
-            self.db.students[student_id] = student
-            print("Student added successfully!")
+    # view student details
+    def view_student(self):
+        conn = create_connection()
+        cur = conn.cursor()
+        cur.execute("select * from student")
+        data = cur.fetchall()
+        return data 
 
-    # 2. View all students
-    def view_students(self):
-        if not self.db.students:
-            print("No students found!")
-        else:
-            for student in self.db.students.values():
-                print(student.display())
+    # delete student from the table 
+    def delete_student(self, id):
+        conn = create_connection()
+        cursor = conn.cursor()
+        cursor.execute('DELETE FROM student WHERE id = ?', (id,))
+        conn.commit()
+        conn.close()
+        print(f"Student with id {id} deleted successfully")
 
-    # 3. Search student
-    def search_student(self, student_id):
-        student = self.db.students.get(student_id)
-        if student:
-            print(student.display())
-        else:
-            print("Student not found!")
+if __name__ == '__main__':
+    obj = Service()
+    obj.create_table()
+    print("student table created successfully")
 
-    # 4. Update student
-    def update_student(self, student_id, name=None, age=None, course=None):
-        student = self.db.students.get(student_id)
-        if student:
-            if name:
-                student.name = name
-            if age:
-                student.age = age
-            if course:
-                student.course = course
-            print("Student updated successfully!")
-        else:
-            print("Student not found!")
+    # add student 
+    s = Student(1, "avani", 22, "DE", "avani@gmail.com")
+    obj.add_student(s)
+    print("student detail addess successfully")
 
-    # 5. Delete student
-    def delete_student(self, student_id):
-        if student_id in self.db.students:
-            del self.db.students[student_id]
-            print("Student deleted successfully!")
-        else:
-            print("Student not found!")
+    # view all student
+    data = obj.view_student()
+    print("data is: ")
+    print(data)
+
+    # delete student 
+    obj.delete_student(1) 
+
+    # view student after deletion
+    data = obj.view_student()
+    print("Data after deletion: ")
+    print(data)

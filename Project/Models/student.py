@@ -6,6 +6,6 @@ class Student:
         self.course = course
         self.email = email
     
-if __name__ = '__main__':
-    obj = Student(1, 'avani', 22, 'DE', avani12@gmail.com)
+if __name__ == '__main__':
+    obj = Student(1, 'avani', 22, 'DE', 'avani12@gmail.com')
     print(obj)
