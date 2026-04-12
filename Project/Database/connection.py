@@ -1,6 +1,6 @@
 import sqlite3
 def create_connection():
-    return sqlite3.connect('Storage.db')
+    return sqlite3.connect('Student.db')
 
 if __name__ == '__main__':
     create_connection()
