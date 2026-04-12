@@ -1,125 +1,64 @@
-# 🎓 Student Management System
+🎓 Student Management System
+A simple command-line application built with Python for managing student records using a database backend.
 
-A simple command-line application built with Python to manage student records using a database backend.
-
----
-
-## 📋 Features
-
-- Add new student records
-- View all existing student records
-- Delete student records by ID
-- Persistent storage via a database
-
----
-
-## 🗂️ Project Structure
-
-```
-project/
+📁 Project Structure
+StudentManagementSystem/
 │
-├── main.py                  # Entry point — CLI menu and user interaction
 ├── Models/
-│   └── student.py           # Student data model/class
-└── Services/
-    └── student_service.py   # Database service layer (CRUD operations)
-```
+│   └── student.py          # Student data model
+│
+├── Services/
+│   └── student_service.py  # Database service layer (CRUD operations)
+│
+└── main.py                 # Entry point / CLI interface
 
----
+✨ Features
 
-## ⚙️ Prerequisites
+Add Student — Register a new student with ID, name, age, course, and email
+View All Students — Display a list of all registered students
+Delete Student — Remove a student record by ID
+Persistent Storage — Data is stored in a database via the service layer
 
-- Python
 
-> Depending on your database backend (e.g., SQLite, MySQL), you may need additional packages. Install them with:
+🚀 Getting Started
+Prerequisites
 
-```bash
-pip install -r requirements.txt
-```
+Python 3.x
 
----
-
-## 🚀 Getting Started
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/student-management-system.git
+Installation
+bashgit clone https://github.com/Avani-Sharma/Python-Language/tree/main/Project/Student_Management_System
 cd student-management-system
-```
+Run the Application
+bashpython main.py
 
-2. **Run the application**
-
-```bash
-python main.py
-```
-
----
-
-## 🖥️ Usage
-
-Once the application starts, you'll be presented with a menu:
-
-```
+🖥️ Usage
+Once running, you'll see an interactive menu:
 1. Press 1 to add Student
 2. Press 2 to View all the students.
 3. Press 3 to update the student details.
 4. Press 4 to exit.
-```
+OptionAction1Add a new student (prompts for ID, name, age, course, email)2View all student records3Delete a student by ID4Exit the application
 
-### Option 1 — Add a Student
-You will be prompted to enter:
-- Student ID
-- Name
-- Age
-- Course
-- Email
+🗃️ Data Model
+Each student record contains the following fields:
+FieldTypeDescriptionidStringUnique student identifiernameStringFull name of the studentageIntegerAge of the studentcourseStringEnrolled courseemailStringStudent email address
 
-### Option 2 — View All Students
-Displays a list of all students currently stored in the database.
+🏗️ Architecture
+The project follows a layered architecture:
 
-### Option 3 — Delete a Student
-Enter the Student ID to remove that student's record from the database.
+Model Layer (Models/student.py) — Defines the Student class representing the data structure
+Service Layer (Services/student_service.py) — Handles all database interactions (create table, add, view, delete)
+Presentation Layer (main.py) — CLI interface that takes user input and calls the service layer
 
-### Option 4 — Exit
-Exits the application.
 
----
+🤝 Contributing
 
-## 🧱 Data Model
+Fork the repository
+Create a feature branch (git checkout -b feature/your-feature)
+Commit your changes (git commit -m 'Add your feature')
+Push to the branch (git push origin feature/your-feature)
+Open a Pull Request
 
-The `Student` class (defined in `Models/student.py`) holds the following fields:
 
-| Field    | Type   | Description              |
-|----------|--------|--------------------------|
-| `id`     | String | Unique student identifier |
-| `name`   | String | Full name of the student |
-| `age`    | int    | Age of the student       |
-| `course` | String | Enrolled course/program  |
-| `email`  | String | Student's email address  |
-
----
-
-## 🛠️ Service Layer
-
-The `Service` class (defined in `Services/student_service.py`) handles all database interactions:
-
-| Method           | Description                        |
-|------------------|------------------------------------|
-| `create_table()` | Initializes the database table     |
-| `add_student()`  | Inserts a new student record       |
-| `view_student()` | Retrieves all student records      |
-| `delete()`       | Deletes a student record by ID     |
-
----
-
-## 📌 Notes
-
-- The database table is automatically created on startup via `create_table()`.
-- Student ID is taken as a string on input but the delete operation expects an integer ID — ensure consistency in your data model.
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+📄 License
+This project is licensed under the MIT License.
