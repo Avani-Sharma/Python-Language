@@ -15,12 +15,3 @@ content = file.read()
 print(content)
 # after performing all the operations on the file we have to close that file by using the .close method
 file.close()
-
-
-# whenever we read or write a file then the script use a pointer to iterate over the file to read or write
-# contents into the file
-# file.seek()
-# whenever we want to check the position of the pointer then we have to use the file.tell() method.
-# file.tell()
-# whenever we want to move the pointer at some position file.seek(position)
-# file.seek(25)
