@@ -1,4 +1,7 @@
-# 1. write() Method: Writes a single string to the file
+# 1. write() Method: is used to write the contents into the file which takes the argument as string.
+# file.write('this is the content which i want to write into the file')
+# 'w': write mode is used to write the content into the file. If the file doesn't exists then it creates the 
+# file first and then write the content into this file.
 # "w" mode will overwrite old data
 # Example
 with open("file.txt", "w") as file:
