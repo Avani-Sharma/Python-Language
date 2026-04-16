@@ -4,6 +4,7 @@
 with open("file.txt", "w") as file:
     file.write("Hello Avani\n")
     file.write("Welcome to Python")
+    print(file)
 
 
 # writelines() Method: Writes multiple lines (list of strings)
