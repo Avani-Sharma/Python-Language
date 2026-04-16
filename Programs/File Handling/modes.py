@@ -14,3 +14,21 @@
 # "a+"	    append + read
 # "rb"	    read binary
 # "wb"	    write binary
+
+
+# 'r+' mode: this mode enables the system to read and write
+# in the 'r+' mode if the file doesn't exist then it will throw an exception or raise an error. 
+file = open('write.txt', 'r+')
+file.write('this is the new content')
+file.seek(0)
+content = file.read()
+print(content)
+file.close()
+
+# 'w+'
+file = open('writes.txt', 'w+')
+file.write('this is the new content')
+file.seek(0)
+content = file.read()
+print(content)
+file.close()
